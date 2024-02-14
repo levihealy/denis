@@ -1,0 +1,200 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(116deg,#e71014,#eb7724,#e0b700, #09c312, #3498db, #9742f9);
+}
+
+.gradient-background {
+    background: linear-gradient(116deg,#d84bd9,#219ed7,#9742f9);
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.container {
+    max-width: 600px; 
+    margin: auto;
+    padding: 10px;
+}
+
+#ver-container {
+    color: white;
+    padding: 7px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 10;
+    color: aliceblue;
+    font-size: 22px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+.text-above-images {
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 30px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(42, 42, 42, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    box-sizing: border-box;
+}
+
+.image:hover {
+    transform: scale(0.9);
+    filter: brightness(70%);
+}
+
+#result {
+    margin: 30px;
+    color: rgb(247, 0, 0);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#checkButton {
+    margin-top: 17px;
+    padding: 10px 20px;
+    font-size: 14px;
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: rgba(42, 42, 42, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex; 
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    }
+
+        #checkButton:hover {
+            background-color: #fbb4f8;
+}
+
+
+@media (max-width: 800px) {
+    .image-container {
+        padding: 10px;
+        margin: 20px 20px;
+        width: 75vw;
+        max-width: none;
+        height: auto;
+        max-height: none;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-above-images {
+        font-size: 13px;
+    }
+
+    .text-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 13px;
+        margin-bottom: 100px;
+    }
+
+    #result {
+        margin: 20px;
+        color: rgb(255, 192, 34);
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.image.selected {
+    border: 3px solid #3498db;
+}
+
+.text-container {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    margin: 7px;
+}
+
+
