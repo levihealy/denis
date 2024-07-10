@@ -13,7 +13,7 @@ function checkAnswers() {
         resultDiv.textContent = "Congratulations! You passed!";
         
         setTimeout(function() {
-            window.location.href = "page2.html";
+            window.location.href = "page1.html";
         }, 2000);
     } else {
         resultDiv.textContent = "Shame on you..... Do you even know Denis?";
